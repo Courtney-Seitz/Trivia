@@ -1,18 +1,24 @@
 body {
 font-family: 'Catamaran', sans-serif;
+color:#272625;
+background-color:#fff1b9;
 }
 
 h1 {
   text-align:center;
-  font-size:40px;
+  font-size:60px;
 }
 
 ul {
   list-style:none;
 }
 
+.question {
+  font-size:30px;
+}
+
 label {
- border:1px solid #ccc;
+ border:1px solid #E3E36A;
  padding:10px;
  margin:0 0 10px;
  display:block;
@@ -20,6 +26,6 @@ label {
 }
 
 label:hover {
-background:#eee;
+background:#e3dede;
 cursor:pointer;
 }
