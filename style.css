@@ -27,6 +27,10 @@ label:hover {
   cursor:pointer;
 }
 
+ul {
+  list-style: none;
+}
+
 nav li {
   display:inline;
   margin:10px;
