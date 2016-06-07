@@ -1,13 +1,13 @@
 $(document).ready(function(){
 })
 
-// Psuedo-code:
+//Psuedo-code:
 //click start button (possibly seperate categories)??
 //first question box appears, multiple choice (checkbox)
 //user clicks/selects answer and clicks 'next', question box disappears, next question box appears...
-//score is tabulated on screen with progress bar??
-//timer function? (during game)??
-//end of quiz display score and time??
+//wishlist - score is tabulated on screen with progress bar??
+//wishlist - timer function? (during game)??
+//wishlist - end of quiz display score and time??
 
 //Total number of questions
 var totalNumQuestions = $('.question').size();
@@ -41,6 +41,9 @@ currentQuestion = currentQuestion + 1;
 //{
 //Otherwise show the next question
 $($question.get(currentQuestion)).fadeIn();
+
+//...Scoring...
+
 
 });
 });
