@@ -14,7 +14,7 @@ h1 {
   font-size:30px;
 }
 
-/* label {
+ label {
   border:1px solid #E3E36A;
   padding:10px;
   margin:0 0 10px;
@@ -25,11 +25,11 @@ h1 {
 label:hover {
   background:#e3dede;
   cursor:pointer;
-} */
+}
 
 ul {
   list-style: none;
-}
+} 
 
 nav li {
   display:inline;
