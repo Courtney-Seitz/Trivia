@@ -2,7 +2,7 @@ $(document).ready(function(){
 })
 
 //Psuedo-code:
-//click start button (possibly seperate categories)??
+//click start button (wishlist - possibly seperate categories)??
 //first question box appears, multiple choice (checkbox)
 //user clicks/selects answer and clicks 'next', question box disappears, next question box appears...
 //wishlist - score is tabulated on screen with progress bar??
@@ -44,6 +44,11 @@ $($question.get(currentQuestion)).fadeIn();
 
 //...Scoring...
 
+
+
+
+
+//...Scoring...
 
 });
 });
