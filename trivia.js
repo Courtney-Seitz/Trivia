@@ -1,7 +1,7 @@
 $(document).ready(function(){
 })
 
-//Psuedo-code:
+//Psuedo-Code:
 //click start button (wishlist - possibly seperate categories)??
 //first question box appears, multiple choice (checkbox)
 //user clicks/selects answer and clicks 'next', question box disappears, next question box appears...
@@ -33,23 +33,40 @@ $($question.get(currentQuestion)).fadeOut(function() {
 //Questions go up one by one
 currentQuestion = currentQuestion + 1;
 
-//if (currentQuestion == totalNumQuestions) {
-//var result = sum_values()
-//alert(result);
-//}
-//else
-//{
-//Otherwise show the next question
+//Next question...
 $($question.get(currentQuestion)).fadeIn();
 
-//...Scoring...
+//...Scoring...wants this in jQuery, eventually...
+function totalScore() {
 
+var score = 0;
 
+var checkedAnswer;
 
+var answers = document.getElementsByClassName('.answers');
 
+var numberOfAnswers = answers.length;
 
-//...Scoring...
+for(var i = 0; i < answers.length; i++)
+
+checkedAnswer = answers[i].options[answers[i].selectedIndex].value;
+
+if(checkedAnswer=== "correct") {
+
+  correct++;
+
+}
+
+document.getElementsByClassName("results").innerHTML = (100/"numberOfAnswers") * 'correct';
+}
+});
 
 });
-});
-//});
+// });
+// });
+// });
+
+// if answers == correct then score++
+
+
+//...Scoring...
