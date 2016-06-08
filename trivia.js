@@ -28,19 +28,19 @@ $($question.get(currentQuestion)).fadeIn();
 //Click listener to get next question...
 $('.next').click(function() {
 
-//Current question disappears...
-$($question.get(currentQuestion)).fadeOut(function() {
+  //Current question disappears...
+  $($question.get(currentQuestion)).fadeOut(function() {
 
-//Questions go up one by one
-currentQuestion = currentQuestion + 1;
+    //Questions go up one by one
+    currentQuestion = currentQuestion + 1;
 
-//Next question...
-$($question.get(currentQuestion)).fadeIn();
+    //Next question...
+    $($question.get(currentQuestion)).fadeIn();
 
 
 
-});
-
+  });
+  
 });
 
 
@@ -49,10 +49,10 @@ $($question.get(currentQuestion)).fadeIn();
 
 var score = 0;
 
- function Results() {
-   if (document.getElementById("correct").checked === true) score++;
-      else(console.log("incorrect"));
-   }
+function Results() {
+  if (document.getElementById("correct").checked === true) score++;
+  else(console.log("incorrect"));
+}
 
 
 
