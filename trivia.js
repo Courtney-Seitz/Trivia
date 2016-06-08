@@ -28,32 +28,31 @@ $($question.get(currentQuestion)).fadeIn();
 //Click listener to get next question...
 $('.next').click(function() {
 
-  //Current question disappears...
+//Current question disappears...
   $($question.get(currentQuestion)).fadeOut(function() {
 
-    //Questions go up one by one
+//Questions go up one by one
     currentQuestion = currentQuestion + 1;
 
-    //Next question...
+//Next question...
     $($question.get(currentQuestion)).fadeIn();
 
-
-
   });
-  
+
 });
 
+//...Scoring function...
 
-
-//...Scoring...want this in jQuery, eventually...
-
-var score = 0;
-
-function Results() {
-  if (document.getElementById("correct").checked === true) score++;
-  else(console.log("incorrect"));
+function setScore() {
+  var score = $('input:checked[value=correct]').length
+  $('#score').text(score);
 }
 
+//Set score on input change...
+$('input').change(setScore);
+
+//Set score when initialized...
+setScore();
 
 
-//...Scoring...
+//...Scoring function...
