@@ -36,7 +36,14 @@ currentQuestion = currentQuestion + 1;
 //Next question...
 $($question.get(currentQuestion)).fadeIn();
 
+
+
+});
+
+});
+
 //...Scoring...wants this in jQuery, eventually...
+
 function totalScore() {
 
 var score = 0;
@@ -58,15 +65,12 @@ if(checkedAnswer=== "correct") {
 }
 
 document.getElementsByClassName("results").innerHTML = (100/"numberOfAnswers") * 'correct';
+
 }
-});
-
-});
 // });
 // });
 // });
 
-// if answers == correct then score++
 
 
 //...Scoring...
