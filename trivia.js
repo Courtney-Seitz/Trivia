@@ -45,16 +45,14 @@ $($question.get(currentQuestion)).fadeIn();
 
 
 
-//...Scoring...wants this in jQuery, eventually...
+//...Scoring...want this in jQuery, eventually...
 
-// var score = 0;
+var score = 0;
 
-// $(".results").on("click", function()) {
-
-
-// });
-// });
-// });
+ function Results() {
+   if (document.getElementById("correct").checked === true) score++;
+      else(console.log("incorrect"));
+   }
 
 
 
