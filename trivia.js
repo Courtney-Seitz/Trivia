@@ -6,9 +6,9 @@ $(document).ready(function(){
 //click start button (wishlist - possibly seperate categories)??
 //first question box appears, multiple choice (checkbox)
 //user clicks/selects answer and clicks 'next', question box disappears, next question box appears...
-//wishlist - score is tabulated on screen with progress bar??
+//score is tabulated on screen with, wishlist - progress bar??
 //wishlist - timer function? (during game)??
-//wishlist - end of quiz display score and time??
+//add play again button
 
 //Total number of questions
 var totalNumQuestions = $('.question').size();
@@ -29,13 +29,13 @@ $($question.get(currentQuestion)).fadeIn();
 $('.next').click(function() {
 
 //Current question disappears...
-  $($question.get(currentQuestion)).fadeOut(function() {
+$($question.get(currentQuestion)).fadeOut(function() {
 
 //Questions go up one by one
-    currentQuestion = currentQuestion + 1;
+currentQuestion = currentQuestion + 1;
 
 //Next question...
-    $($question.get(currentQuestion)).fadeIn();
+$($question.get(currentQuestion)).fadeIn();
 
   });
 
@@ -53,6 +53,5 @@ $('input').change(setScore);
 
 //Set score when initialized...
 setScore();
-
 
 //...Scoring function...
