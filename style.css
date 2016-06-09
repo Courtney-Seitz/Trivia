@@ -4,6 +4,12 @@ body {
   background-color:#f6ea8c;
 }
 
+.bananas {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: #c9d6de 1px 3px;
+}
+
 .gameContainer {
   text-align:center;
 }
@@ -54,7 +60,7 @@ body {
 
 h1 {
   text-align:center;
-  font-size:70px;
+  font-size:60px;
   text-shadow: #c9d6de 1px 3px;
 }
 
