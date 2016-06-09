@@ -6,8 +6,9 @@ body {
 
 .bananas {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   text-shadow: #c9d6de 1px 3px;
+  margin: inherit;
 }
 
 .gameContainer {
@@ -23,7 +24,7 @@ body {
   position:inherit;
   cursor:pointer;
   color:#ffffff;
-  font-size:40px;
+  font-size:30px;
   padding:12px 37px;
   text-decoration:none;
   text-shadow:0px 1px 0px #283966;
@@ -45,7 +46,7 @@ body {
   position:inherit;
   cursor:pointer;
   color:#ffffff;
-  font-size:40px;
+  font-size:30px;
   padding:12px 37px;
   text-decoration:none;
   text-shadow:0px 1px 0px #283966;
@@ -60,20 +61,21 @@ body {
 
 h1 {
   text-align:center;
-  font-size:60px;
+  font-size:50px;
   text-shadow: #c9d6de 1px 3px;
+  margin: inherit;
 }
 
 .question {
-  font-size:40px;
+  font-size:30px;
 }
 
 .answers {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .scoreDisplay {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 label {
@@ -81,7 +83,7 @@ label {
   padding:10px;
   margin:0 0 10px;
   display:block;
-  font-size:20px;
+
 }
 
 label:hover {
@@ -91,23 +93,4 @@ label:hover {
 
 ul {
   list-style: none;
-}
-
-nav li {
-  display:inline;
-  margin:10px;
-  /* border-style:solid;
-  border-width:thin; */
-  position:relative;
-
-}
-nav {
-  text-align: center;
-  /* border-style: solid;
-  border-width: thin; */
-}
-
-nav ul {
-  padding:inherit;
-  list-style:none;
 }
