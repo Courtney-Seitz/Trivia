@@ -10,7 +10,9 @@
 
   <h1>Trivia Working Title</h1>
 
-  <input class="startGame" type="button" value="Start">
+  <div class="gameContainer">
+    <input class="startGame" type="button" value="Start">
+  </div>
 
   <div class="questionContainer">
     <div class="question">Question1?
@@ -44,16 +46,14 @@
         <li><label><input name="Question3" value="wrong" type="radio"> Answer3</label></li>
       </ul>
     </div>
-  </div>
 
-  <input class="next" type="button" value="Next Question">
-  <input class="again" type="button" value="Play Again">
+    <div class="gameContainer">
+      <input class="next" type="button" value="Next Question">
+      <p class="scoreDisplay">Score: <span id="score">
+      </span><p>
+      </div>
 
-  <p class="scoreDisplay">Score: <span id="score">
-  </span><p>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="trivia.js"></script>
-  </body>
-  </html>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <script src="trivia.js"></script>
+    </body>
+    </html>
