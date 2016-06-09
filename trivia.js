@@ -1,14 +1,26 @@
-$(document).ready(function(){
+//Psuedo-Code:
+//click start button
+//wishlist - possibly seperate categories
+//first question box appears, multiple choice
+//user clicks/selects answer and clicks 'next', question box disappears, next question box appears...
+//score is tabulated on screen
+//wishlist - progress bar
+//wishlist - timer function
+//wishlist - add play again button
 
+$(document).ready(function(){
+  $(".again").hide();
+  $(".questionContainer").hide();
+  $(".next").hide();
+  $(".scoreDisplay").hide();
 });
 
-//Psuedo-Code:
-//click start button (wishlist - possibly seperate categories)??
-//first question box appears, multiple choice (checkbox)
-//user clicks/selects answer and clicks 'next', question box disappears, next question box appears...
-//score is tabulated on screen with, wishlist - progress bar??
-//wishlist - timer function? (during game)??
-//add play again button
+//Start function, unhide questions, other buttons
+$(".startGame").click(function() {
+  $(".questionContainer").show();
+  $(".next").show();
+  $(".scoreDisplay").show();
+});
 
 //Total number of questions
 var totalNumQuestions = $('.question').size();
@@ -28,21 +40,20 @@ $($question.get(currentQuestion)).fadeIn();
 //Click listener to get next question...
 $('.next').click(function() {
 
-//Current question disappears...
-$($question.get(currentQuestion)).fadeOut(function() {
+  //Current question disappears...
+  $($question.get(currentQuestion)).fadeOut(function() {
 
-//Questions go up one by one
-currentQuestion = currentQuestion + 1;
+    //Questions go up one by one
+    currentQuestion = currentQuestion + 1;
 
-//Next question...
-$($question.get(currentQuestion)).fadeIn();
+    //Next question...
+    $($question.get(currentQuestion)).fadeIn();
 
   });
 
 });
 
-//...Scoring function...
-
+//Scoring function
 function setScore() {
   var score = $('input:checked[value=correct]').length
   $('#score').text(score);
@@ -53,5 +64,3 @@ $('input').change(setScore);
 
 //Set score when initialized...
 setScore();
-
-//...Scoring function...
