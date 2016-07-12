@@ -21,7 +21,8 @@ $(document).ready(function(){
       var radioSelection = $("div.options");
       for (var i = 0; i < selections.length; i++) {
         console.log("looping");
-        radioSelection.prepend('<label><input type="radio" name="radio_buttons" value="' + selections[i] +'"/>' + selections[i] + '</label>');
+        radioSelection.append('<label><input type="radio" name="radio_buttons" value="' + selections[i] +'"/>' + selections[i] + '</label>');
+
 
       }
       currentQuestion++;
