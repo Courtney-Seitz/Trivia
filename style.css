@@ -4,93 +4,63 @@ body {
   background-color:#f6ea8c;
 }
 
-.bananas {
+.questions {
   text-align: center;
   font-size: 25px;
   text-shadow: #c9d6de 1px 3px;
-  margin: inherit;
+  margin: 40px;
 }
 
-.gameContainer {
+#gameContainer {
   text-align:center;
-}
-
-.startGame {
-  box-shadow: 0px 0px 0px 2px #9fb4f2;
-  background-color:#7892c2;
-  border-radius:10px;
-  border:1px solid #4e6096;
-  display:inline;
-  position:inherit;
-  cursor:pointer;
-  color:#ffffff;
-  font-size:30px;
-  padding:12px 37px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #283966;
-}
-.startGame:hover {
-  background-color:#476e9e;
-}
-.startGame:active {
-  position:relative;
-  top:1px;
-}
-
-.next {
-  box-shadow: 0px 0px 0px 2px #9fb4f2;
-  background-color:#7892c2;
-  border-radius:10px;
-  border:1px solid #4e6096;
-  display:inline;
-  position:inherit;
-  cursor:pointer;
-  color:#ffffff;
-  font-size:30px;
-  padding:12px 37px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #283966;
-}
-.next:hover {
-  background-color:#476e9e;
-}
-.next:active {
-  position:relative;
-  top:1px;
 }
 
 h1 {
   text-align:center;
   font-size:50px;
   text-shadow: #c9d6de 1px 3px;
-  margin: inherit;
+  margin: 40px;
 }
 
-.question {
+
+label:hover {
+  background-color:
+}
+
+#gameContainer #startGame {
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  background-color:#7892c2;
+  border-radius:10px;
+  border:1px solid #4e6096;
+  display:inline;
+  position:inherit;
+  cursor:pointer;
+  color:#ffffff;
   font-size:30px;
-}
-
-.answers {
-  font-size: 20px;
-}
-
-.scoreDisplay {
-  font-size: 30px;
+  padding:12px 37px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+  margin: 30px;
 }
 
 label {
-  border:1px solid #e3e36a;
-  padding:10px;
-  margin:0 0 10px;
-  display:block;
-
+ display: block;
+ font-size:20px;
 }
 
 label:hover {
-  background:#e3dede;
-  cursor:pointer;
+  background-color: #c9d6de;
+  border-radius:10px;
+  border:1px solid #4e6096;
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  text-decoration:none;
 }
 
-ul {
-  list-style: none;
+#gameContainer #startGame:hover {
+  background-color:#476e9e;
+}
+
+#gameContainer #startGame:active {
+  position:relative;
+  top:1px;
 }
