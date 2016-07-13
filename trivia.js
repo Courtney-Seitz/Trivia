@@ -15,7 +15,7 @@ $(document).ready(function(){
   //function for event listener, shows intro text, starts game
   function beginGame() {
     $(".intro").fadeIn("slow");
-//score++;
+    //score++;
     if (currentQuestion < triviaQuestions.length) {
       $("#startGame").val("Next Question")
       $("#questionBox").remove();
@@ -43,8 +43,14 @@ $(document).ready(function(){
       //$("#startGame").remove();
       //$("#playAgain").show();
     }
-$("#selectRadio").find("input[type='radio']:checked").val();
-console.log();
+
+
+
+    //$("#selectRadio input[type='radio']:checked")
+    console.log($("input[type='radio']:checked").val());
+    if (selections == triviaQuestions.correctSelection); {
+      //score++;
+    }
   }
 
   //put in function here to have button show 'Play Again' text when quiz ends
