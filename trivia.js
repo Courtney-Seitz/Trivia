@@ -7,7 +7,6 @@ $(document).ready(function(){
 
   //hides intro text, leaves 'start' button visible
   $(".intro").hide();
-  $("#playAgain").hide();
   //reveals intro text on click event, calls function for running game, fill value of button with 'start game'
   $("#startGame").on("click", beginGame); {
     $("#startGame").val("Start Game");
@@ -16,6 +15,7 @@ $(document).ready(function(){
   //function for event listener, shows intro text, starts game
   function beginGame() {
     $(".intro").fadeIn("slow");
+
     if (currentQuestion < triviaQuestions.length) {
       $("#startGame").val("Next Question")
       $("#questionBox").remove();
