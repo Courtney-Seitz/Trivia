@@ -2,6 +2,7 @@ body {
   font-family: 'Catamaran', sans-serif;
   color:#272625;
   background-color:#f6ea8c;
+  text-align: center;
 }
 
 .questions {
@@ -11,9 +12,6 @@ body {
   margin: 40px;
 }
 
-#gameContainer {
-  text-align:center;
-}
 
 h1 {
   text-align:center;
@@ -27,7 +25,7 @@ label:hover {
   background-color:
 }
 
-#gameContainer #startGame {
+ #startGame {
   box-shadow: 0px 0px 0px 2px #9fb4f2;
   background-color:#7892c2;
   border-radius:10px;
@@ -41,6 +39,7 @@ label:hover {
   text-decoration:none;
   text-shadow:0px 1px 0px #283966;
   margin: 30px;
+
 }
 
 label {
@@ -56,11 +55,11 @@ label:hover {
   text-decoration:none;
 }
 
-#gameContainer #startGame:hover {
+#startGame:hover {
   background-color:#476e9e;
 }
 
-#gameContainer #startGame:active {
+#startGame:active {
   position:relative;
   top:1px;
 }

@@ -1,7 +1,7 @@
 $(document).ready(function(){
   console.log("Ready!");
   //hides intro text, leaves 'start' button visible
-  $("#trivia").hide();
+  $(".intro").hide();
   //reveals intro text on click event, calls function for running game, fill value of button with 'start game'
   $("#startGame").on("click", beginGame); {
     $("#startGame").val("Start Game");
@@ -10,27 +10,27 @@ $(document).ready(function(){
   var currentQuestion = 0;
   //score starts at zero
   var score = 0;
+  var index = 0;
   //function for event listener, shows intro text, starts game
   function beginGame() {
-    $("#trivia").fadeIn("slow");
+    $(".intro").fadeIn("slow");
     if (currentQuestion < triviaQuestions.length) {
+      $("#startGame").val("Next Question")
       $("p.questions").html(triviaQuestions[currentQuestion].question);
       //var selectionChoice = $("div.options").html(triviaQuestions[currentQuestion].selection);
       var selections = triviaQuestions[currentQuestion].selection;
-      console.log(selections);
+      //console.log(selections);
       var radioSelection = $("div.options");
       for (var i = 0; i < selections.length; i++) {
         console.log("looping");
-        radioSelection.append('<label><input type="radio" name="radio_buttons" value="' + selections[i] +'"/>' + selections[i] + '</label>');
-
-
+        radioSelection.after('<div class="optionsList"><label><input type="radio" id="radio_buttons" value="' + selections[i] +'"/>' + selections[i] + '</label></div>');
+//if (currentQuestion < triviaQuestions.length) {
+//  $("div.optionsList").remove();
+//}
       }
       currentQuestion++;
     }
-    //changes text of button to 'next question' as game begins
-    if (currentQuestion > 0 ) {
-      $("#startGame").val("Next Question");
-    }
+
     //put in function here to have button show 'Play Again' text when quiz ends
 
   }
