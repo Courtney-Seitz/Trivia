@@ -4,12 +4,13 @@ $(document).ready(function(){
   var currentQuestion = 0;
   //score starts at zero
   var score = 0;
+
   //hides intro text, leaves 'start' button visible
   $(".intro").hide();
+  $("#playAgain").hide();
   //reveals intro text on click event, calls function for running game, fill value of button with 'start game'
   $("#startGame").on("click", beginGame); {
     $("#startGame").val("Start Game");
-
   }
 
   //function for event listener, shows intro text, starts game
@@ -38,9 +39,14 @@ $(document).ready(function(){
       $(".optionsList").remove();
       $("#startGame").before('<h2> Final score: ' + score + ' / 4 questions corrrect.</h2>');
       $("#startGame").val("Play Again");
+      //$("#startGame").remove();
+      //$("#playAgain").show();
 
+      }
     }
-  }
+
+
+
 
   //put in function here to have button show 'Play Again' text when quiz ends
 
