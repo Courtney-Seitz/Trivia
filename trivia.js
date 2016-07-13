@@ -15,20 +15,20 @@ $(document).ready(function(){
   //function for event listener, shows intro text, starts game
   function beginGame() {
     $(".intro").fadeIn("slow");
-
+//score++;
     if (currentQuestion < triviaQuestions.length) {
       $("#startGame").val("Next Question")
       $("#questionBox").remove();
       $(".optionsList").remove();
-      $("p.questions").after('<p id="questionBox">' + triviaQuestions[currentQuestion].question + '</p>');
-      $("p.options").after("<p id='quizBox'>");
+      $("p.questions").append('<p id="questionBox">' + triviaQuestions[currentQuestion].question + '</p>');
+      $("p.options").append("<p id='quizBox'>");
       var selections = triviaQuestions[currentQuestion].selection;
       //  console.log(selections);
       for (var i = 0; i < selections.length; i++) {
         console.log("looping");
-        $("#quizBox").after("<label><div class='optionsList'><input type='radio' name='" + selections[i] +"'/>" + selections[i] + '<br /></div></label>');
+        $("#quizBox").append("<label><div class='optionsList'><input id='selectRadio' type='radio' name='" + selections[i] +"'/>" + selections[i] + '<br /></div></label>');
       }
-      $("#startGame").before("</p>");
+      $("#startGame").prepend("</p>");
       currentQuestion++;
       console.log("looping");
     }
@@ -37,15 +37,14 @@ $(document).ready(function(){
       $("p.options").remove();
       $("#questionBox").remove();
       $(".optionsList").remove();
-      if (currentQuestion == triviaQuestions.length) {
-        $("#startGame").before('<h2> Final score: ' + score + ' / 4 questions corrrect.</h2>');
-      }
+
+      $("#startGame").before('<h2 class="totalScore"> Final score: ' + score + ' / 4 questions corrrect.</h2>');
       $("#startGame").val("Play Again");
       //$("#startGame").remove();
       //$("#playAgain").show();
     }
-    //  if (currentQuestion == 4 ) {
-    //}
+$("#selectRadio").find("input[type='radio']:checked").val();
+console.log();
   }
 
   //put in function here to have button show 'Play Again' text when quiz ends
