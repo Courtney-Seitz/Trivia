@@ -21,28 +21,33 @@ $(document).ready(function(){
       $("#questionBox").remove();
       $(".optionsList").remove();
       $("p.questions").after('<p id="questionBox">' + triviaQuestions[currentQuestion].question + '</p>');
-      $("p.options").after("<form id='quizForm'>");
+      $("p.options").after("<p id='quizBox'>");
       var selections = triviaQuestions[currentQuestion].selection;
       //  console.log(selections);
       for (var i = 0; i < selections.length; i++) {
-      //  console.log("looping");
-        $("#quizForm").after("<label><div class='optionsList'><input type='radio' name='" + selections[i] +"'/>" + selections[i] + '<br /></div></label>');
+        console.log("looping");
+        $("#quizBox").after("<label><div class='optionsList'><input type='radio' name='" + selections[i] +"'/>" + selections[i] + '<br /></div></label>');
       }
-      $("#startGame").before("</form>");
+      $("#startGame").before("</p>");
 
       currentQuestion++;
+            console.log("looping");
     }
     else {
       $("p.questions").remove();
       $("p.options").remove();
       $("#questionBox").remove();
       $(".optionsList").remove();
+      if (currentQuestion == triviaQuestions.length) {
       $("#startGame").before('<h2> Final score: ' + score + ' / 4 questions corrrect.</h2>');
+    }
       $("#startGame").val("Play Again");
+
       //$("#startGame").remove();
       //$("#playAgain").show();
-
       }
+//  if (currentQuestion == 4 ) {
+  //}
     }
 
 

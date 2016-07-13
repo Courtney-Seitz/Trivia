@@ -12,6 +12,10 @@ body {
   margin: 40px;
 }
 
+#quizBox {
+
+}
+
 
 h1 {
   text-align:center;
@@ -45,6 +49,9 @@ label:hover {
 label {
  display: block;
  font-size:20px;
+ text-align:center;;
+ text-shadow: #c9d6de 1px 3px;
+ margin: 20px;
 }
 
 label:hover {
