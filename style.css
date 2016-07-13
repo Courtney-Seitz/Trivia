@@ -5,7 +5,7 @@ body {
   text-align: center;
 }
 
-.questions {
+#questionBox {
   text-align: center;
   font-size: 25px;
   text-shadow: #c9d6de 1px 3px;

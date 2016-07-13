@@ -9,7 +9,7 @@ $(document).ready(function(){
   //reveals intro text on click event, calls function for running game, fill value of button with 'start game'
   $("#startGame").on("click", beginGame); {
     $("#startGame").val("Start Game");
-  
+
   }
 
   //function for event listener, shows intro text, starts game
@@ -37,7 +37,8 @@ $(document).ready(function(){
       $("#questionBox").remove();
       $(".optionsList").remove();
       $("#startGame").before('<h2> Final score: ' + score + ' / 4 questions corrrect.</h2>');
-      //  $("#startGame").remove();
+      $("#startGame").val("Play Again");
+
     }
   }
 
