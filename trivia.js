@@ -29,9 +29,8 @@ $(document).ready(function(){
         $("#quizBox").after("<label><div class='optionsList'><input type='radio' name='" + selections[i] +"'/>" + selections[i] + '<br /></div></label>');
       }
       $("#startGame").before("</p>");
-
       currentQuestion++;
-            console.log("looping");
+      console.log("looping");
     }
     else {
       $("p.questions").remove();
@@ -39,19 +38,15 @@ $(document).ready(function(){
       $("#questionBox").remove();
       $(".optionsList").remove();
       if (currentQuestion == triviaQuestions.length) {
-      $("#startGame").before('<h2> Final score: ' + score + ' / 4 questions corrrect.</h2>');
-    }
+        $("#startGame").before('<h2> Final score: ' + score + ' / 4 questions corrrect.</h2>');
+      }
       $("#startGame").val("Play Again");
-
       //$("#startGame").remove();
       //$("#playAgain").show();
-      }
-//  if (currentQuestion == 4 ) {
-  //}
     }
-
-
-
+    //  if (currentQuestion == 4 ) {
+    //}
+  }
 
   //put in function here to have button show 'Play Again' text when quiz ends
 
