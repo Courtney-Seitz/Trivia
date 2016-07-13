@@ -8,8 +8,8 @@ $(document).ready(function(){
   $(".intro").hide();
   //reveals intro text on click event, calls function for running game, fill value of button with 'start game'
   $("#startGame").on("click", beginGame); {
-  $("#startGame").val("Start Game");
-  currentQuestion++;
+    $("#startGame").val("Start Game");
+  
   }
 
   //function for event listener, shows intro text, starts game
@@ -19,27 +19,29 @@ $(document).ready(function(){
       $("#startGame").val("Next Question")
       $("#questionBox").remove();
       $(".optionsList").remove();
-        $("p.questions").after('<p id="questionBox">' + triviaQuestions[currentQuestion].question + '</p>');
-        $("p.options").after("<form id='quizForm'>");
-var selections = triviaQuestions[currentQuestion].selection;
+      $("p.questions").after('<p id="questionBox">' + triviaQuestions[currentQuestion].question + '</p>');
+      $("p.options").after("<form id='quizForm'>");
+      var selections = triviaQuestions[currentQuestion].selection;
       //  console.log(selections);
-        for (var i = 0; i < selections.length; i++) {
-        //  console.log("looping");
+      for (var i = 0; i < selections.length; i++) {
+      //  console.log("looping");
         $("#quizForm").after("<label><div class='optionsList'><input type='radio' name='" + selections[i] +"'/>" + selections[i] + '<br /></div></label>');
-        }
-        $("#startGame").before("</form>");
+      }
+      $("#startGame").before("</form>");
 
-        currentQuestion++;
-      }
-      else {
-        $("p.questions").remove();
-        $("p.options").remove();
-        $("#questionBox").remove();
-        $(".optionsList").remove();
-      }
+      currentQuestion++;
     }
+    else {
+      $("p.questions").remove();
+      $("p.options").remove();
+      $("#questionBox").remove();
+      $(".optionsList").remove();
+      $("#startGame").before('<h2> Final score: ' + score + ' / 4 questions corrrect.</h2>');
+      //  $("#startGame").remove();
+    }
+  }
 
-    //put in function here to have button show 'Play Again' text when quiz ends
+  //put in function here to have button show 'Play Again' text when quiz ends
 
   //question/answer array of an array stored in a variable
   var triviaQuestions = [
