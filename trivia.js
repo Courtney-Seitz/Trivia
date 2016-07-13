@@ -17,15 +17,25 @@ $(document).ready(function(){
     $(".intro").fadeIn("slow");
     if (currentQuestion < triviaQuestions.length) {
       $("#startGame").val("Next Question")
-        $("p.questions").html(triviaQuestions[currentQuestion].question);
-        var selections = triviaQuestions[currentQuestion].selection;
-        console.log(selections);
-        var radioSelection = $("p.options");
+      $("#questionBox").remove();
+      $(".optionsList").remove();
+        $("p.questions").after('<p id="questionBox">' + triviaQuestions[currentQuestion].question + '</p>');
+        $("p.options").after("<form id='quizForm'>");
+var selections = triviaQuestions[currentQuestion].selection;
+      //  console.log(selections);
         for (var i = 0; i < selections.length; i++) {
-          console.log("looping");
-          radioSelection.prepend('<label><input type="radio" name="radio_buttons" value="' + selections[i] +'"/>' + selections[i] + '</label>');
+        //  console.log("looping");
+        $("#quizForm").after("<label><div class='optionsList'><input type='radio' name='" + selections[i] +"'/>" + selections[i] + '<br /></div></label>');
         }
+        $("#startGame").before("</form>");
+
         currentQuestion++;
+      }
+      else {
+        $("p.questions").remove();
+        $("p.options").remove();
+        $("#questionBox").remove();
+        $(".optionsList").remove();
       }
     }
 
