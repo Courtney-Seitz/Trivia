@@ -42,22 +42,21 @@ $(document).ready(function(){
       $("#startGame").val("Play Again");
       //$("#startGame").remove();
       //$("#playAgain").show();
-    }
-
-
-
-    //$("#selectRadio input[type='radio']:checked")
-    console.log($("input[type='radio']:checked").val());
-    if (selections == triviaQuestions.correctSelection); {
       //score++;
+      //$("#selectRadio input[type='radio']:checked")
+      //console.log($("input[type='radio']:checked").val());
+      if (currentQuestion < triviaQuestions.length) {
+        if ($("input:checked").val() == triviaQuestions[currentQuestion].correctSelection) {
+          score++;
+        }
+      }
     }
+
+
   }
-
   //put in function here to have button show 'Play Again' text when quiz ends
-
   //question/answer array of an array stored in a variable
   var triviaQuestions = [
-
     {
       question: "Where did bananas originate?",
       selection: ["Southeast Asia", "The Caribbean", "The Grocery Store", "Morocco" ],
