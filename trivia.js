@@ -47,7 +47,7 @@ $(document).ready(function(){
       //$("p.options").remove();
       $("#questionBox").remove();
       $(".optionsList").remove();
-      $("#startGame").before('<h2 class="totalScore"> Final score: ' + score + ' / 8 questions corrrect.</h2>');
+      $("#startGame").before('<h2 class="totalScore"> Final score: ' + score + ' / 8 questions correct!</h2>');
       $("#startGame").val("Play Again");
       //$("#startGame").remove();
       //$("#playAgain").show();
