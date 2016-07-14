@@ -29,27 +29,29 @@ $(document).ready(function(){
       }
       $("#startGame").prepend("</p>");
 
-      $("div.optionsList").on("click",".selectRadio" function() {
+      $("div.optionsList").on("click",".selectRadio", function() {
         console.log("optionsList click event");
         console.log($(this).attr("name"));
-        console.log($("currentQuestion: "+currentQuestion);
-        console.log
-if ($("div.optionsList").html() === triviaQuestions[currentQuestion].correctSelection) {
+        console.log("currentQuestion: "+currentQuestion);
+        console.log( $(this).attr("name").trim() );
+        console.log( triviaQuestions[currentQuestion-1].correctSelection );
+        if ($(this).attr("name").trim() === triviaQuestions[currentQuestion-1].correctSelection) {
           score++;
-          console.log(score);
-       }
+          console.log("score: "+score);
+         }
       });
       currentQuestion++;
     }
     else {
-      $("p.questions").remove();
-      $("p.options").remove();
+      //$("p.questions").remove();
+      //$("p.options").remove();
       $("#questionBox").remove();
       $(".optionsList").remove();
       $("#startGame").before('<h2 class="totalScore"> Final score: ' + score + ' / 4 questions corrrect.</h2>');
       $("#startGame").val("Play Again");
       //$("#startGame").remove();
       //$("#playAgain").show();
+
     }
   }
   //question/answer array of an array stored in a variable
