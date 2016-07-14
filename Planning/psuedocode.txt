@@ -1,0 +1,11 @@
+Pseudocode:
+
+Clean page with solitary large button for start/landing page.
+
+When button is pressed, quiz intro and first question with selectable answers appear.
+
+After selecting an answer, a solitary 'next' button is available.
+
+When 'next' button is pressed, quiz advances to each question until conclusion of quiz.
+
+at the end of quiz, there is an option to play again (pressing button), and a final score displayed.

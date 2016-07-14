@@ -1,0 +1,9 @@
+As a user, I would like to have the Trivia content initially hidden, then revealed to me one question at a time to build suspense.
+
+As a user, I would like to select my answers and have them clearly displayed once selected so I can be sure of my selection.
+
+As a user, I would like to have an easily accessible multi-button, so I am not searching for several buttons to do different things.
+
+As a user, I would like to see my score displayed at the end of the game, in order to see how well I did.
+
+As a user I would like an option to replay the game to try and better my previous score(s).
