@@ -13,7 +13,7 @@ $(document).ready(function(){
   }
   //function for event listener, shows intro text, starts game
   function beginGame() {
-    console.log("Begin!");
+    console.log("do it!");
     $("#trivia .totalScore").remove();
     $(".intro").fadeIn("slow");
     if (currentQuestion < triviaQuestions.length) {
@@ -23,7 +23,8 @@ $(document).ready(function(){
       $("p.questions").append('<p id="questionBox">' + triviaQuestions[currentQuestion].question + '</p>');
       $("p.options").append("<p id='quizBox'>");
       var selections = triviaQuestions[currentQuestion].selection;
-      //  console.log(selections);
+      console.log(triviaQuestions[currentQuestion])
+      console.log(selections);
       for (var i = 0; i < selections.length; i++) {
         $("#quizBox").append("<label><div class='optionsList'><input class='selectRadio' type='radio' name='" + selections[i] +"'/>" + selections[i] + '<br /></div></label>');
       }
@@ -32,13 +33,12 @@ $(document).ready(function(){
       $("div.optionsList").on("click",".selectRadio", function() {
         console.log("optionsList click event");
         console.log($(this).attr("name"));
-        console.log("currentQuestion: "+currentQuestion);
-        console.log( $(this).attr("name").trim() );
-        console.log( triviaQuestions[currentQuestion-1].correctSelection );
-        if ($(this).attr("name").trim() === triviaQuestions[currentQuestion-1].correctSelection) {
+        console.log(currentQuestion);
+        console.log(triviaQuestions[currentQuestion-1].correctSelection );
+        if ($(this).attr("name") === triviaQuestions[currentQuestion-1].correctSelection) {
           score++;
-          console.log("score: "+score);
-         }
+          console.log(score);
+        }
       });
       currentQuestion++;
     }
@@ -51,16 +51,16 @@ $(document).ready(function(){
       $("#startGame").val("Play Again");
       //$("#startGame").remove();
       //$("#playAgain").show();
+      //resets to play again
       currentQuestion = 0;
       score = 0;
-
     }
   }
   //question/answer array of an array stored in a variable
   var triviaQuestions = [
     {
       question: "Where did bananas originate?",
-      selection: [" Southeast Asia ", " The Caribbean ", " The Grocery Store ", " Morocco " ],
+      selection: ["Southeast Asia", "The Caribbean", "The Grocery Store", "Morocco" ],
       correctSelection: "Southeast Asia"
     },
     {
