@@ -8,7 +8,7 @@ body {
 #questionBox {
   text-align: center;
   font-size: 30px;
-  text-shadow: #c9d6de 1px 2px;
+  text-shadow: #F8D04D 1px 2px;
   margin: 40px;
 }
 
@@ -22,7 +22,7 @@ background-position: center;
 h1 {
   text-align:center;
   font-size:55px;
-  text-shadow: #c9d6de 1px 2px;
+  text-shadow: #F8D04D 1px 2px;
   margin: 40px;
 }
 
@@ -51,12 +51,12 @@ label {
  display:block;
  font-size:20px;
  text-align:center;;
- text-shadow: #c9d6de 1px 1px;
+ text-shadow: #FEF8B9 1px 1px;
  margin:20px;
 }
 
 label:hover {
-  background-color: #c9d6de;
+  background-color: #FEF8B9;
   border-radius:10px;
   /*border:1px solid #4e6096;*/
   /*box-shadow: 0px 0px 0px 2px #9fb4f2;*/
