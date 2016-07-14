@@ -1,14 +1,14 @@
 body {
   font-family: 'Catamaran', sans-serif;
   color:#272625;
-  background-color:#f6ea8c;
+  background-color:#F7EF81;
   text-align: center;
 }
 
 #questionBox {
   text-align: center;
-  font-size: 25px;
-  text-shadow: #c9d6de 1px 3px;
+  font-size: 30px;
+  text-shadow: #FFCE6D 1px 2px;
   margin: 40px;
 }
 
@@ -20,14 +20,11 @@ body {
 h1 {
   text-align:center;
   font-size:50px;
-  text-shadow: #c9d6de 1px 3px;
+  text-shadow: #FFCE6D 1px 3px;
   margin: 40px;
 }
 
 
-label:hover {
-  background-color:
-}
 
  #startGame {
   box-shadow: 0px 0px 0px 2px #9fb4f2;
@@ -37,7 +34,7 @@ label:hover {
   display:inline;
   position:inherit;
   cursor:pointer;
-  color:#ffffff;
+  color:#FFFFFF;
   font-size:30px;
   padding:12px 37px;
   text-decoration:none;
@@ -50,15 +47,19 @@ label {
  display: block;
  font-size:20px;
  text-align:center;;
- text-shadow: #c9d6de 1px 3px;
- margin: 20px;
+ text-shadow: #FFCE6D 1px 2px;
+ margin-right: 250px;
+ margin-left: 250px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+
 }
 
 label:hover {
-  background-color: #c9d6de;
+  background-color: #FFD23F;
   border-radius:10px;
-  border:1px solid #4e6096;
-  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  border:1px solid #C38200;
+  box-shadow: 0px 0px 0px 2px #FFFA77;
   text-decoration:none;
 }
 

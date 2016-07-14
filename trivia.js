@@ -47,11 +47,8 @@ if ($("div.optionsList").html() === triviaQuestions[currentQuestion].correctSele
       $("#startGame").val("Play Again");
       //$("#startGame").remove();
       //$("#playAgain").show();
-
     }
   }
-
-
   //question/answer array of an array stored in a variable
   var triviaQuestions = [
     {
