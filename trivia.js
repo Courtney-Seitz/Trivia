@@ -13,6 +13,8 @@ $(document).ready(function(){
   }
   //function for event listener, shows intro text, starts game
   function beginGame() {
+    console.log("Begin!");
+    $("#trivia .totalScore").remove();
     $(".intro").fadeIn("slow");
     if (currentQuestion < triviaQuestions.length) {
       $("#startGame").val("Next Question")
@@ -27,10 +29,11 @@ $(document).ready(function(){
       }
       $("#startGame").prepend("</p>");
 
-      $("div.optionsList").on("click", function() {
+      $("div.optionsList").on("click",".selectRadio" function() {
         console.log("optionsList click event");
-        console.log($("div.optionsList").text());
-        console.log(currentQuestion);
+        console.log($(this).attr("name"));
+        console.log($("currentQuestion: "+currentQuestion);
+        console.log
 if ($("div.optionsList").html() === triviaQuestions[currentQuestion].correctSelection) {
           score++;
           console.log(score);
