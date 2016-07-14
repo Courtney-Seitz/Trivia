@@ -19,15 +19,11 @@ body {
 
 h1 {
   text-align:center;
-  font-size:50px;
+  font-size:55px;
   text-shadow: #c9d6de 1px 3px;
   margin: 40px;
 }
 
-
-label:hover {
-  background-color:
-}
 
  #startGame {
   box-shadow: 0px 0px 0px 2px #9fb4f2;
@@ -38,7 +34,7 @@ label:hover {
   position:inherit;
   cursor:pointer;
   color:#ffffff;
-  font-size:30px;
+  font-size:50px;
   padding:12px 37px;
   text-decoration:none;
   text-shadow:0px 1px 0px #283966;
@@ -46,18 +42,25 @@ label:hover {
 
 }
 
+p.options {
+
+}
+
 label {
- display: block;
+ display:block;
  font-size:20px;
  text-align:center;;
  text-shadow: #c9d6de 1px 3px;
- margin: 20px;
+ margin-left: 30px;
+ margin-right:30px;
+ margin-top:20px;
+ margin-bottom:20px;
 }
 
 label:hover {
   background-color: #c9d6de;
   border-radius:10px;
-  border:1px solid #4e6096;
+  /*border:1px solid #4e6096;*/
   box-shadow: 0px 0px 0px 2px #9fb4f2;
   text-decoration:none;
 }

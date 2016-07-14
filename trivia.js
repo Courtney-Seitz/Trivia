@@ -47,10 +47,12 @@ $(document).ready(function(){
       //$("p.options").remove();
       $("#questionBox").remove();
       $(".optionsList").remove();
-      $("#startGame").before('<h2 class="totalScore"> Final score: ' + score + ' / 4 questions corrrect.</h2>');
+      $("#startGame").before('<h2 class="totalScore"> Final score: ' + score + ' / 10 questions corrrect.</h2>');
       $("#startGame").val("Play Again");
       //$("#startGame").remove();
       //$("#playAgain").show();
+      currentQuestion = 0;
+      score = 0;
 
     }
   }
@@ -70,6 +72,37 @@ $(document).ready(function(){
       question: "What do agriculturists call bananas growing together on a single stem?",
       selection: ["Fingerlings", "Toes", "Hands", "Legs"],
       correctSelection: "Hands"
+    },
+    {
+      question: "Into which of the following sub-categories does the banana fruit best fit?",
+      selection: ["Nut", "Legume", "Sundae", "Berry"],
+      correctSelection: "Berry"
+    },
+    //
+    {
+      question: "Into which of the following sub-categories does the banana fruit best fit?",
+      selection: ["Nut", "Legume", "Sundae", "Berry"],
+      correctSelection: "Berry"
+    },
+    {
+      question: "Into which of the following sub-categories does the banana fruit best fit?",
+      selection: ["Nut", "Legume", "Sundae", "Berry"],
+      correctSelection: "Berry"
+    },
+    {
+      question: "Into which of the following sub-categories does the banana fruit best fit?",
+      selection: ["Nut", "Legume", "Sundae", "Berry"],
+      correctSelection: "Berry"
+    },
+    {
+      question: "Into which of the following sub-categories does the banana fruit best fit?",
+      selection: ["Nut", "Legume", "Sundae", "Berry"],
+      correctSelection: "Berry"
+    },
+    {
+      question: "Into which of the following sub-categories does the banana fruit best fit?",
+      selection: ["Nut", "Legume", "Sundae", "Berry"],
+      correctSelection: "Berry"
     },
     {
       question: "Into which of the following sub-categories does the banana fruit best fit?",
