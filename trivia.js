@@ -80,36 +80,25 @@ $(document).ready(function(){
     },
     //
     {
-      question: "Into which of the following sub-categories does the banana fruit best fit?",
-      selection: ["Nut", "Legume", "Sundae", "Berry"],
-      correctSelection: "Berry"
+      question: "What is the scientific name for the banana?",
+      selection: ["musa sapientum", "carpe bananum", "solanum lycopersicum", "phaseolus vulgaris"],
+      correctSelection: "musa sapientum"
     },
     {
-      question: "Into which of the following sub-categories does the banana fruit best fit?",
-      selection: ["Nut", "Legume", "Sundae", "Berry"],
-      correctSelection: "Berry"
+      question: "Which country consumes the most bananas?",
+      selection: ["United States", "Uganda", "China", "Germany"],
+      correctSelection: "Uganda"
     },
     {
-      question: "Into which of the following sub-categories does the banana fruit best fit?",
-      selection: ["Nut", "Legume", "Sundae", "Berry"],
-      correctSelection: "Berry"
+      question: "The banana plant grows from ______?",
+      selection: ["a Seed", "a Bulb", "a Sprout", "Air"],
+      correctSelection: "a Bulb"
     },
     {
-      question: "Into which of the following sub-categories does the banana fruit best fit?",
-      selection: ["Nut", "Legume", "Sundae", "Berry"],
-      correctSelection: "Berry"
+      question: "Nutrionally, what does a banana NOT provide?",
+      selection: ["Vitamin C", "Potassium", "Magnesium", "Sodium"],
+      correctSelection: "Sodium"
     },
-    {
-      question: "Into which of the following sub-categories does the banana fruit best fit?",
-      selection: ["Nut", "Legume", "Sundae", "Berry"],
-      correctSelection: "Berry"
-    },
-    {
-      question: "Into which of the following sub-categories does the banana fruit best fit?",
-      selection: ["Nut", "Legume", "Sundae", "Berry"],
-      correctSelection: "Berry"
-    },
-
   ];
 
 });
