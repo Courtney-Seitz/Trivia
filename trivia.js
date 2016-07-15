@@ -34,6 +34,7 @@ $(document).ready(function(){
         console.log("optionsList click event");
         console.log($(this).attr("name"));
         console.log(currentQuestion);
+        console.log(triviaQuestions[currentQuestion-1])
         console.log(triviaQuestions[currentQuestion-1].correctSelection );
         if ($(this).attr("name") === triviaQuestions[currentQuestion-1].correctSelection) {
           score++;
@@ -78,7 +79,6 @@ $(document).ready(function(){
       selection: ["Nut", "Legume", "Sundae", "Berry"],
       correctSelection: "Berry"
     },
-    //
     {
       question: "What is the scientific name for the banana?",
       selection: ["musa sapientum", "carpe bananum", "solanum lycopersicum", "phaseolus vulgaris"],
@@ -95,10 +95,9 @@ $(document).ready(function(){
       correctSelection: "a Bulb"
     },
     {
-      question: "Nutrionally, what does a banana NOT provide?",
+      question: "Nutritionally, what does a banana NOT provide?",
       selection: ["Vitamin C", "Potassium", "Magnesium", "Sodium"],
       correctSelection: "Sodium"
     },
   ];
-
 });
