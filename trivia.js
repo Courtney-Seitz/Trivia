@@ -37,6 +37,8 @@ $question.hide();
 //Show the first question
 $($question.get(currentQuestion)).fadeIn();
 
+// Nice job of commenting!
+
 //Click listener to get next question...
 $('.next').click(function() {
 
@@ -64,3 +66,4 @@ $('input').change(setScore);
 
 //Set score when initialized...
 setScore();
+// Anything you want to happen on initialization should probably go in $(document).ready
